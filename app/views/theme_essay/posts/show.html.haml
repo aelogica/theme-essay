@@ -9,7 +9,7 @@
   %h1.title= @post.title
   = @post.body.html_safe
 
-  = render 'layouts/default-theme/blog_pager'
+  = render 'theme_essay/layouts/blog_pager'
 
 - if get_blog_config('enable_comments')
   = render 'express_blog/posts/disqus'
