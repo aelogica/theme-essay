@@ -1,0 +1,9 @@
+%article.item
+  %h6.author
+    Written by
+    %a{href: "#"}= post.author.try(:name) || 'Nobody'
+    on
+    = "#{post.created_at.strftime('%B %-d, %Y')}."
+  = link_to post.title, post_path(post.category.slug, post), class: 'title'
+  .body
+    = Sanitize.fragment(post.body).truncate(140)

@@ -1,0 +1,54 @@
+.post-article
+  @include grid-column($columns: 10, $center: true)
+  margin-top: 9em
+  margin-bottom: 3em
+
+  .author
+    position: relative
+    padding: 1em 0
+    color: $gray
+
+    .author-details
+      color: $gray
+
+    .avatar
+      position: absolute
+      top: 10%
+      border-radius: $global-radius
+      left: -70px
+
+  .title
+    font-weight: bold
+    font-size: rem-calc(40)
+    margin-bottom: 1em
+
+  blockquote
+    quotes: "\201C""\201D""\2018""\2019"
+    color: $gray
+    border-left: 0
+    padding: 0
+    margin: 30px 0px
+    text-align: center
+    font-style: italic
+
+    &::before,
+    &::after
+      font-size: rem-calc(50)
+      color: $silver
+      line-height: 0.1em
+      vertical-align: -10px
+
+    &::before
+      content: open-quote
+
+    &::after
+      content: close-quote
+
+    img
+      margin: 30px auto
+      display: block
+
+    p
+      font-size: rem-calc(30)
+      display: inline
+      font-weight: bold

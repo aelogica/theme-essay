@@ -1,0 +1,43 @@
+.cover-photo-wrapper
+  width: 100%
+  position: relative
+  z-index: -1
+  background-color: $brand-color
+  min-height: 300px
+
+  .cover-photo
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+
+.blog-details
+  position: absolute
+  top: 50%
+  left: 50%
+  display: block
+  width: 100%
+  -webkit-transform: translateX(-50%)
+  transform: translateX(-50%)
+
+  .title,
+  .description
+    text-align: center
+    margin: 0 auto
+    display: block
+    width: 50%
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+
+  .title
+    color: #fff
+    font-weight: bold
+
+  .description
+    color: #f5f5f5
+    font-size: rem-calc(20)
+

@@ -1,0 +1,15 @@
+%article.post-article
+  .author
+    %img{src: 'http://placekitten.com/50/50', class: 'avatar'}
+    %h6.author-details
+      Written by
+      %a{href: "#"}= @post.author.try(:name) || 'Nobody'
+      on
+      = "#{@post.created_at.strftime('%B %-d, %Y')}."
+  %h1.title= @post.title
+  = @post.body.html_safe
+
+  = render 'layouts/default-theme/blog_pager'
+
+- if get_blog_config('enable_comments')
+  = render 'express_blog/posts/disqus'

@@ -1,0 +1,35 @@
+.posts-list
+  @include grid-column($columns: 10, $center: true)
+  margin-top: 2.5em
+  padding-bottom: 3em
+
+  .list-header
+    color: $gray
+    padding: 2em 0
+    letter-spacing: 3px
+    text-transform: uppercase
+
+  .item
+    border-bottom: 1px solid $border-color
+    padding: 2em 0
+
+    .title
+      display: block
+      font-size: $h3-font-size
+      font-weight: bold
+      margin-bottom: 0.75em
+      color: #333
+
+      &:hover
+        color: #222
+
+    .body
+      color: darken($gray, 20%)
+      line-height: 1.6em
+
+    .author
+      line-height: 1.5em
+      color: $gray
+
+    &:last-of-type
+      border-bottom: 0

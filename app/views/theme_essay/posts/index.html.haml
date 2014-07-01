@@ -1,0 +1,14 @@
+.posts-list
+  .list-header
+    Latest Posts
+  = render @posts
+  = render 'theme_essay/layouts/blog_pager'
+
+- content_for :page_title do
+  .cover-photo-wrapper{style: 'height: 500px;'}
+    .cover-photo
+      .blog-details
+        %h1.title
+          = get_blog_config('blog_title')
+        %p.description
+          = get_blog_config('blog_description')
