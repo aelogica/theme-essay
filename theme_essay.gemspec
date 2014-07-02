@@ -7,11 +7,11 @@ require "theme_essay/version"
 Gem::Specification.new do |s|
   s.name        = "theme_essay"
   s.version     = ThemeEssay::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["Ace Subido", "Karlo Soriano"]
+  s.email       = ["ace@aelogica.com", "karlo@aelogica.com"]
   s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ThemeEssay."
-  s.description = "TODO: Description of ThemeEssay."
+  s.summary     = "AELOGICA AppExpress Essay Theme"
+  s.description = "AELOGICA AppExpress Essay Theme 2014"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
