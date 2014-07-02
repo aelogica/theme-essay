@@ -1,15 +1,13 @@
 %article.post-article
   .author
-    %img{src: 'http://placekitten.com/50/50', class: 'avatar'}
     %h6.author-details
-      Written by
-      %a{href: "#"}= @post.author.try(:name) || 'Nobody'
-      on
+      Written on
       = "#{@post.created_at.strftime('%B %-d, %Y')}."
   %h1.title= @post.title
   = @post.body.html_safe
 
-  = render 'theme_essay/layouts/blog_pager'
-
 - if get_blog_config('enable_comments')
   = render 'theme_essay/posts/disqus'
+
+- content_for :page_navigation do
+  = render 'theme_essay/layouts/top_bar'

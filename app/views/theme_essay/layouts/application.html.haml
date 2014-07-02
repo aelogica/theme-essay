@@ -11,10 +11,10 @@
     = csrf_meta_tags
   %body
     %header
-      = render "theme_essay/layouts/blog_nav"
+      = yield :page_navigation
       = yield :page_title
     %main{:role => "main"}
       .row
         = yield
-      = render "theme_essay/layouts/blog_footer"
+      = render "theme_essay/layouts/footer"
 
