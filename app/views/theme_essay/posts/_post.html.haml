@@ -2,6 +2,7 @@
   %h6.author
     Written on
     = "#{post.created_at.strftime('%B %-d, %Y')}."
-  = link_to post.title, post_path(post.category.slug, post), class: 'title'
+    .title
+      = get_post_link(post)
   .body
     = Sanitize.fragment(post.body).truncate(140)
