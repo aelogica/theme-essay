@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = ThemeEssay::VERSION
   s.authors     = ["Ace Subido", "Karlo Soriano"]
   s.email       = ["ace@aelogica.com", "karlo@aelogica.com"]
-  s.homepage    = "appexpress.io"
+  s.homepage    = "http://appexpress.io"
   s.summary     = "AELOGICA AppExpress Essay Theme 2014"
   s.description = "AELOGICA AppExpress Essay Theme 2014"
   s.license     = "MIT"
