@@ -1,7 +1,12 @@
 %footer
   .footer-wrapper
-    %p
-      © Copyright
+    %p.footer-left
+      Blog at
+      = link_to "AppExpress.io", "http://alpha.appexpress.io"
+      | Theme: essay
+    %p.footer-right
+      Copyright ©
       = current_year
-      &mdash;
-      = get_blog_config('blog_title')
+      -if get_blog_config('blog_owner')
+        &mdash;
+      = get_blog_config('blog_owner')
